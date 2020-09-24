@@ -15,6 +15,7 @@ let path = {
         html: source_folder + '/*.html',
         css: source_folder + '/scss/style.scss',
         js: source_folder + '/js/script.js',
+        js_film: source_folder + '/js/film.js',
         img: source_folder + '/img/**/*.{png,jpg,svg,gif,ico,webp}',
     },
 
@@ -85,6 +86,8 @@ function css() {
 }
 
 function js() {
+    src(path.src.js_film)
+    .pipe(dest(path.build.js))
     return src(path.src.js)
         .pipe(fileinclude())
         .pipe(uglify())
