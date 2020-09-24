@@ -1,0 +1,32 @@
+.button{
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  @include adaptiv-font(14, 12);
+  font-weight: 600;
+  &:hover{
+    border: 2px solid red;
+  }
+  &:active{
+    background-color: rgb(211, 26, 26);
+    color: white;
+  }
+  &__modal{
+    width: 150px;
+    margin: 0 auto;
+    background-color: rgb(145, 145, 145);
+    &:hover{
+      border: 2px solid rgb(10, 10, 221);
+    }
+    &:active{
+      background-color: rgb(8, 8, 179);
+      color: white;
+    }
+  }
+  &__main{
+    height: 50px;
+    width: 200px;
+    display: block;
+  }
+}

@@ -1,0 +1,69 @@
+.overlay{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, .56);
+  z-index: 6;
+}
+
+.modal-icon{
+  display: none;
+  position: fixed;
+  max-width: 400px;
+  height: 200px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &__wrapper{
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__form{
+    margin: 0 0 10px;
+  }
+  &__inputs{
+    width: 350px;
+    margin: 0 0 7px 0;
+    @include adaptiv-font(14, 12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    label{
+      font-weight: 500;
+    }
+    input{
+      border: 1px solid black;
+      border-radius: 6px;
+      padding: 3px 4px;
+      min-width: 275px;
+      margin: 0 0 4px 0;
+    }
+  }
+  &__close{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 260px;
+    left: 1000px;
+    z-index: 7;
+    &:after, &:before{
+      content: ' ';
+      width: 100%;
+      height: 2px;
+      background-color: red;
+      position: absolute;
+    }
+    &:after{
+      transform: rotate(-45deg);
+    }
+    &:before{
+      transform: rotate(45deg);
+    }
+  }
+}
