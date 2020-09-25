@@ -34,6 +34,28 @@ $(function() {
       pauseOnHover: true,
       pauseOnDotsHover: true,
       waitForAnimate: true,
+      responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 737,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+          }
+        }
+      ]
+    });
+    $('.reviews__slides').slick({
+      arrows: false,
+      dots: true,
+      adaptiveHeight: true,
     });
   });
 

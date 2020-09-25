@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Cinema24</title>
 </head>
@@ -23,13 +24,13 @@
                 <a href="#" class="header__item-link">About Us</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__item-link">Films Slider</a>
+                <a href="#films" class="header__item-link">Films Slider</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__item-link">Latest News</a>
+                <a href="#news" class="header__item-link">Latest News</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__item-link">Client Previews</a>
+                <a href="#review" class="header__item-link">Client Previews</a>
               </li>
             </ul>
           </nav>
@@ -64,20 +65,82 @@
       </div>
      </div>
     </section>
-    <section class="carousel">
+    <section class="carousel" id='films'>
       <div class="container">
         <div class="slider">
 
         </div>
       </div>
     </section>
+    <section class="lastestNews" id='news'>
+      <div class="container">
+        <h2 class="lastestNews__header">Lastest News</h2>
+        <div class="lastestNews__wrapper">
+          <div class="card" style="width: 18rem;">
+            <img src="img/not-found.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img/not-found.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img/not-found.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews" id="review">
+      <h2 class="reviews__title">Reviews</h2>
+      <div class="container">
+        <div class="reviews__slides">
+          <div class="reviews__items">
+            <img src="img/not-found.jpg" alt="client" class="reviews__img">
+            <div class="reviews__content">
+              <h2 class="reviews__header">Alex</h2>
+              <p class="reviews__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto vel provident, porro a minus est architecto quam eveniet facilis! Atque quis totam earum iusto quo! Molestias officia aliquid quis laborum.
+              </p>
+            </div>
+          </div>
+          <div class="reviews__items">
+            <img src="img/not-found.jpg" alt="client" class="reviews__img">
+            <div class="reviews__content">
+              <h2 class="reviews__header">Alex</h2>
+              <p class="reviews__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto vel provident, porro a minus est architecto quam eveniet facilis! Atque quis totam earum iusto quo! Molestias officia aliquid quis laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="reviews__items">
+            <img src="img/not-found.jpg" alt="client" class="reviews__img">
+            <div class="reviews__content">
+              <h2 class="reviews__header">Alex</h2>
+              <p class="reviews__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto vel provident, porro a minus est architecto quam eveniet facilis! Atque quis totam earum iusto quo! Molestias officia aliquid quis laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
   </main>
   <div class="overlay">
-    <div class="modal-icon__close">
-      <span></span>
-    </div>
+
     <div class="modal-icon" id="try-now">
       <div class="modal-icon__wrapper">
+        <div class="modal-icon__close">
+          <span></span>
+        </div>
         <form action="#" class="modal-icon__form">
           <div class="modal-icon__inputs">
             <label for="your-full-name">Name:</label>
