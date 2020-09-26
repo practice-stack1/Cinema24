@@ -29,7 +29,7 @@ $(function() {
       arrows: true,
       dots: true,
       easing: 'linear',
-      autoplay: false,
+      autoplay: true,
       pauseOnFocus: true,
       pauseOnHover: true,
       pauseOnDotsHover: true,

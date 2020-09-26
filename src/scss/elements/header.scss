@@ -5,6 +5,9 @@
   left: 0;
   position: fixed;
   z-index: 2;
+  @media(max-width: 768px){
+    height: 65px;
+  }
   &:before{
     content: '';
     position: absolute;
@@ -14,6 +17,9 @@
     top: 0;
     background-color: rgb(150, 150, 150);
     z-index: 2;
+    @media(max-width: 768px){
+      height: 65px;
+    }
   }
   &__wrapper{
     position: relative;
@@ -23,6 +29,8 @@
     height: 100%;
     @media(max-width: 768px){
       justify-content: space-between;
+      align-items: center;
+      height: 65px;
     }
   }
   &__logo{
@@ -122,6 +130,7 @@
     top: 30px;
     transition: 1s all ease;
     @media(max-width: 768px){
+      top: 22px;
       position: absolute;
       display: block;
       width: 30px;

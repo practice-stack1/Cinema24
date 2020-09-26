@@ -1,0 +1,16 @@
+.footer{
+  min-height: 275px;
+  padding: 30px 20px 0 20px;
+  &__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card{
+      max-width: 240px;
+    }
+  }
+  &__end{
+    height: 40px;
+    background-color: rgb(150, 150, 150);
+  }
+}
